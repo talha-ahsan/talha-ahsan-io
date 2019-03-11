@@ -1,0 +1,16 @@
+name: talha-ahsan-io
+version: 0.1.0
+
+authors:
+  - talhaahsan <stwyde@gmail.com>
+
+dependencies:
+  kemal:
+    github: kemalcr/kemal
+targets:
+  talha-ahsan-io:
+    main: src/talha-ahsan-io.cr
+
+crystal: 0.27.2
+
+license: MIT
