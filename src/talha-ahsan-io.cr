@@ -1,6 +1,7 @@
-# TODO: Write documentation for `Talha::Ahsan::Io`
-module Talha::Ahsan::Io
-  VERSION = "0.1.0"
+require "kemal"
 
-  # TODO: Put your code here
+get "/" do |env|
+  send_file env, "src/views/homepage.html"
 end
+
+Kemal.run
