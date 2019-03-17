@@ -1,7 +1,7 @@
 require "kemal"
 
 get "/" do |env|
-  send_file env, "src/views/homepage.html"
+  send_file env, "public/homepage.html"
 end
 
 Kemal.run
