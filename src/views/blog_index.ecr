@@ -1,5 +1,5 @@
 <% posts.each do |post_info| %>
-    <h2> <%= post_info.title %></h2>
-    <h3> <%= post_info.subtitle %> </h3>
-    <h4> <%= post_info.date %> </h4>
+    <h2 class="is-size-2"> <a href="blog/<%=post_info.path%>"><%= post_info.title %> </a></h2>
+    <h3 class= "is-size-4"> <a href="blog/<%=post_info.path%>"><%= post_info.subtitle %> </a></h3>
+    <h4 class= "is-size-5"> <a href="blog/<%=post_info.path%>"><%= post_info.date %> </a></h4>
 <% end %>
