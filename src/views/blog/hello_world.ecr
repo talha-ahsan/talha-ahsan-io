@@ -1,7 +1,59 @@
 <h1 class="title">Hello World / A quick dive into this Website</h1>
 <h2 class="subtitle"> Kemal, Crystal, and why I did what I did </h2>
+<h2 class="subtitle">May 19th, 2019 </h2>
 <br/>
-<p>
-    Hello reader! This is my personal / professional blog, and is something that I hope I can do weekly updates on moving forwards. 
-    Today I'm finally biting the bullet 
-</p>
+<div class="is-size-5">
+    <p>
+        Hello reader! This is my personal / professional blog, and is something that I hope I can do weekly updates on moving forwards. 
+        Today I'm finally biting the bullet (I started to write this sentence about a week ago) and getting a generic introduction and look into how this website is structured.
+        The main goal is for me to lay out what the underlying architecture of this blog is, and also to lay out what the end plans are for this project. 
+    </p>
+    <br/>
+    <p>
+        At a very high level, this entire website is a Kemal app that's hosted on DigitalOcean's droplets.
+        There's absolutely ZERO JavaScript, and the whole website should be fully responsive.
+        The goal is to have load times be FAST, and hence the styling is minified and should be relatively lightweight. 
+        In a near future update, the CSS will be shrunk down further as I trim out all the excessive styling options for features that I'm not using. 
+    </p>
+    <br/>
+    <p>
+        But first before we get deep into Kemal, I want to talk about the styling for this site. As you've probably figured, it's a bit... overwhelming. 
+        That's more or less intentional. While the website is JS free for speed concerns and ease of development, I did want something that calsl back to the darkest days of JavaScript. 
+        Namely, the early years of the internet (for me) in the early 2000s and late 1990s when I was growing up in rural America, using dial-up to get online. 
+        Back then, my nostalgia tells me, websites with JavaScript shoveled it into your browser. Active pages filled with animations and little emojis and animated text. 
+        These websites each strove for their own unique sense of identity, and there was a circus of poor design throughout the internet. Even popular social media websites 
+        like MySpace ended up having several major pages that looked absolutely atrocious by modern standards: neon lights as a background color, and a color palette that will make you almost want to puke.
+        
+    </p>
+    <p>
+        I wanted to try to recreate that with a more "modern" twist. I ended up settling on Bulma as the general CSS framework I wanted to use. Bulma is JavaScript free so I can avoid JQuery entirely. 
+        Bulma also as a result is unopinionated, and if I eventually start hosting React or Vue.js based views, I'll be able to integrate Bulma into my components without much of a problem.
+        But Bulma doesn't look so... obnoxious. I ended up customizing Bulma using the rather well named "Carnival Hangover" theme. This lets me get those colors that POP in your face, while looking somewhat modern at the same time.
+        Setting up custom themes with Bulma was easy enough, I just used Sass and defined my variables. From there it's smooth sailing.
+    </p>
+    <br/>
+    <p>
+        With the front-end styling out of the way, I do want to spend some time to explain the Kemal back-end. 
+        Kemal is the Crystal alternative to Sinatra, a common bare-bones(ish) web fraemework for Ruby. A lot of the syntax is shared, and it allows for easy routing to pages and partials I've set up. 
+        Crystal is a compiled language that seeks to emulate a lot of the developer ease that Ruby provides.
+        I ended up choosing it over Ruby because I've been meaning to pick up a more performant language and want there to be minimal time spent waiting on the server to return a response. 
+        I can manually specify routes, so the homepage and blog index pages are both manually routed. From there each blog post is routed using a macro. 
+        This macro takes in the contents of a JSON file I've set up, and generates routes for each blog post. 
+        This lets me leave the main server code untouched unless I need to do massive changes or new features. Whenever a blog post needs to go online (or offline), I'll edit the JSON file which holds each post's metadata, and adding or removing entries influences the list available and the routes generated.
+    </p>
+    <br/>
+    <p>
+        Overall the app right now is fairly barebones, and there isn't really much to add on in terms of the architecture of this app. 
+        I do want to toss in a few future plans as well for this project. First and foremost I want to start integrating some sort of CI/CD pipeline in place for updating the blog.
+        Essentially the goal is to use TravisCI for this project. 
+        I'm still working out the kinks in my head, and I do need to get this app deployed before I start really testing this next phase. 
+        But the goal is to have it set so that when I push to Master, Travis will run all the unit tests I'll have set up. 
+        If the tests pass, then we'll send the updated code to whatever droplet / app server that's hosting the live version of this app. 
+        Once the code is updated on the app server, we'll rebuild the Docker image, and run it so that we have a nice updated hosted piece of code up and running. 
+    </p>
+    <br/>
+    <p>
+        That's all I have planned so far for this app. I'm sure I'll be adding more ideas and features along the way. 
+        If for some forsaken reason you bothered to read all the way here, just know that I really appreciate it, and I hope that I wasn't too incoherent in this first post. 
+    </p>
+</div>
