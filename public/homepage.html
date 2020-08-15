@@ -7,6 +7,7 @@
     <link rel"icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
     <link rel="icon" href="icons/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/mystyles.css">
+    <link rel="stylesheet" href="css/svgStyles.css">
   </head>
   <body>
 
@@ -27,18 +28,23 @@
         </div>
     </nav>
 
-    <section class="hero is-fullheight is-primary">
+    <section class="hero is-fullheight brickSvg">
         <div class="hero-body">
             <div class="container">
                 <div class="columns">
-                    <div class="column is-two-thirds has-text-centered">
-                        <h1 class="title is-size-1 has-text-warning">Talha</h1>
-                        <h1 class="title is-size-1 has-text-warning">Ahsan</h1>
+                    <div class="column is-two-thirds">
+                        <div class="has-text-centered has-background-primary">
+                            <h1 class="title is-size-1 has-text-link">Talha</h1>
+                            <h1 class="title is-size-1 has-text-link">Ahsan</h1>
+                        </div>
+                        
                     </div>
-                    <div class="column has-text-centered">
-                        <h1 class="subtitle is-size-3 has-text-warning">Full Stack Developer</h1>
-                        <h1 class="subtitle is-size-3 has-text-warning">Data Engineer</h1>
-                        <h1 class="subtitle is-size-3 has-text-warning">Interested in BioTech</h1>
+                    <div class="column">
+                        <div class="has-text-centered has-background-primary">
+                            <h2 class="subtitle is-size-3 has-text-link">Full Stack Developer</h2>
+                            <h2 class="subtitle is-size-3 has-text-link">Software Researcher</h2>
+                            <h2 class="subtitle is-size-3 has-text-link">Chef and Painter</h2>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -54,9 +60,9 @@
                                 <section id="about_me_section">
                                     <p class="is-size-4">I'm a young professional who started off doing full stack development on <strong>Ruby on Rails</strong>! I've also worked with <strong>Python</strong>, <strong>JavaScript</strong>, <strong>Perl</strong>, and <strong>Crystal</strong> in a professional setting, and aspire to be a programming language polyglot.</p>
                                     <br/>
-                                    <p class="is-size-4">Some of the languages that I've been meaning to fully learn or use in a professional setting are <strong>Elixir, Rust, Haskell, C, and C++</strong>. As such, I've begun to plan out several projects leveraging those languages to broaden my skillset.</p>
+                                    <p class="is-size-4">I now work at 3M as a <strong>Full Stack Developer</strong> in their Corporate Research Labs. Most of my day to day work is done in Python and React, but I've worked with other tools and languages as the situation requires it.</p>
                                     <br/>
-                                    <p class="is-size-4">In my spare time, I like to read while snuggled next to my cat, paint, create glass art, and pretend that I'll one day learn Arabic and refine my French skills. </p>
+                                    <p class="is-size-4">In my spare time, I like to read while snuggled next to my cat, paint miniatures, and cook, all while pretending that I'll one day learn Arabic and refine my French skills. </p>
                                 </section>
                             </div>
                             <div class="column">
@@ -90,18 +96,42 @@
                 <div class="columns">
                     <div class="column">
                         <h1 class="title is-size-2"> Employment </h1>
+                        <h1 class="title is-size-2"> History </h1>
                     </div>
                     <div class="column">
                         <div class= "card">
                             <header class="card-header">
                                 <p class="card-header-title">
-                                    Software Engineer at Bio-Techne
+                                    Full Stack Developer at 3M (September 2019 - Present)
                                 </p>
                             </header>
                             <div class="card-content">
                                 <div class="content">
-                                    <p>Full Stack Developer at Bio-Techne, I work on our internal Rails based LIMS software, data migration and maintenance,
-                                         and data engineering requirements for the Data Exploration Lab. I also pioneered the use of microservices for reporting services in our development group.</p>
+                                    <p>I work as a developer on multiple cross-displinary projects. Most of these involve working with researchers in various physical science labs and their research applications. </p>
+                                    <p> I've also worked with Data Scientists to help create developer tools to easily access our separate applications, creating tooling that "wraps" around our APIs to accelerate development.</p>
+                                    <div class="tags">
+                                        <span class="tag">Python</span>
+                                        <span class="tag">Flask</span>
+                                        <span class="tag">AWS</span>
+                                        <span class="tag">React</span>
+                                        <span class="tag">Javascript</span>
+                                        <span class="tag">AWS Lambda</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+
+                        <div class= "card">
+                            <header class="card-header">
+                                <p class="card-header-title">
+                                    Software Engineer at Bio-Techne (May 2018 - July 2019)
+                                </p>
+                            </header>
+                            <div class="card-content">
+                                <div class="content">
+                                    <p>Full Stack Developer at Bio-Techne, I worked on Bio-Techne's internal Rails based LIMS software, data migration and maintenance,
+                                         and data engineering requirements for the Data Exploration Lab. I also explored the use of microservices for reporting services in our development group.</p>
                                     <div class="tags">
                                         <span class="tag">Ruby</span>
                                         <span class="tag">Rails</span>
@@ -120,6 +150,9 @@
                         </div>
                         <br>
 
+                        
+                    </div>
+                    <div class="column">
                         <div class= "card">
                             <header class="card-header">
                                 <p class="card-header-title">
@@ -137,10 +170,7 @@
                                 </div>
                             </div>
                         </div>
-
-                    </div>
-                    <div class="column">
-
+                        <br/>
                         <div class= "card">
                             <header class="card-header">
                                 <p class="card-header-title">
@@ -234,7 +264,7 @@
             <div class="container">
                 <div class="columns">
                     <div class="column">
-                            <h1 class="title is-size-2"> Projects </h1>
+                            <h1 class="title is-size-2"> Personal Projects (unordered)</h1>
                             <br/>
                             <div class= "card">
                                 <header class="card-header">
@@ -244,7 +274,7 @@
                                 </header>
                                 <div class="card-content">
                                     <div class="content">
-                                        <p>Discord Bot built on Ruby for the /r/Warhammer40k Discord community to help provide information on Fal's "Group Buy" events</p>
+                                        <p>Discord Bot built in Ruby for the /r/Warhammer40k Discord community to help provide information on Fal's "Group Buy" events</p>
                                         <p>Hosted on AWS T2.micro</p>
                                         <div class="tags">
                                             <span class="tag">Ruby</span>
@@ -321,14 +351,14 @@
                         <div class= "card">
                             <header class="card-header">
                                 <p class="card-header-title">
-                                        Clark Family Portal (In-Progress)
+                                        Kitaab Al Cuisine
                                 </p>
                             </header>
                             <div class="card-content">
                                 <div class="content">
-                                    <p>Recipe storage and retrieval app for use by the Clark Family in Minnesota.</p>
-                                    <p>Built on the Amber MVC framework and Crystal, with a dockerized PostgreSQL database end</p> 
-                                    <p>Eventual goals include setting up the Amber framework primarily as an API, and moving the views from server side rendered pages to client side rendered pages using Vue.js</p>
+                                    <p>A Recipe app to help me keep track of recipes from various cook books and videos</p>
+                                    <p>Built on the Amber MVC framework and Crystal, with a dockerized PostgreSQL database end</p>
+                                    <p>The front end is fairly light on Javascript, but utilizes Turbolinks to provide a "SPA" feel with significantly less overhead</p>
                                     <div class="tags">
                                         <span class="tag">Crystal</span>
                                         <span class="tag">Amber</span>
@@ -406,16 +436,11 @@
     </section>
 
     <footer class="footer">
-        <div class="content has-text-centered">
+        <div class="content has-text-centered has-text-white">
             <p>Opinions and content posted here are my own, and not representative of any current, past, and future employers</p>
+
             <p>
-                Styling based on <strong>Bulma</strong> with the <a href="https://www.color-hex.com/color-palette/74819"> Carnival Hangover Color Pallette</a>
-            </p>
-            <p>
-                Back-end done using <strong>Crystal</strong> and <strong>Kemal</strong>
-            </p>
-            <p>
-                Hosted on DigitalOcean
+                Back-end done using <b>Crystal</b> and <b>Kemal</b>
             </p>
             <p>
                 Questions or Comments? Message me on <a href="https://Linkedin.com/in/talha-ahsan">LinkedIn!</a> 
@@ -424,6 +449,3 @@
     </footer>
   </body>
 </html>
-<style>
-    html {background-color: #551956;}
-</style>

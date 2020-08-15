@@ -7,10 +7,11 @@ authors:
 dependencies:
   kemal:
     github: kemalcr/kemal
+    commit: dfe7dca08f4c9a9456d6132af5f6b59fcd6865e4
 targets:
   talha-ahsan-io:
     main: src/talha-ahsan-io.cr
 
-crystal: 0.27.2
+crystal: 0.35.1
 
 license: MIT

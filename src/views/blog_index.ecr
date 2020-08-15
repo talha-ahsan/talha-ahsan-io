@@ -3,3 +3,6 @@
     <h3 class= "subtitle"> <a href="blog/<%=post_info.path%>"><%= post_info.subtitle %>, <%= post_info.date %> </a></h3>
     <br/>
 <% end %>
+<% if posts.empty? %> 
+    <h2 class="title"> Looks like I haven't published any posts yet... </h2>
+<% end %>

@@ -1,14 +1,1 @@
-[
-    {
-        "title":"Hello World / A Quick Dive into this Website",
-        "subtitle": "What to expect, and a quick guide of this Blog's technical end and design decisions",
-        "date": "May 2, 2019",
-        "path": "hello_world"
-    },
-    {
-        "title": "RailsConf 2019: My First RailsConf",
-        "subtitle": "Experiencies, new techniques, and how I feel about Rails",
-        "date": "May 3, 2019",
-        "path": "rails_conf"
-    }
-]
+[]
