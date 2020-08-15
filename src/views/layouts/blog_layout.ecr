@@ -7,6 +7,7 @@
     <link rel"icon" type="/image/png" sizes="32x32" href="/icons/favicon-32x32.png">
     <link rel="icon" href="/icons/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="/css/mystyles.css">
+    <link rel="stylesheet" href="/css/svgStyles.css">
   </head>
   <body>
 
@@ -26,36 +27,35 @@
             </div>
         </div>
     </nav>
-    <section class="hero is-fullheight is-primary">
+    <section class="hero is-fullheight brickSvg">
         <div class="hero-body">
             <div class="container has-text-centered">
             <div class="columns">
-                <div class="column is-three-fifths is-offset-one-fifth has-text-left">
-                    <%= content %>
+                <div class="column is-three-fifths is-offset-one-fifth">
+                    <div class="box">
+                        <div class="content has-text-black">
+                            <%= content %>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <footer class="footer">
-        <div class="content has-text-centered">
-            <p>Opinions and content posted here are my own, and not representative of any current, past, and future employers</p>
+        <div class="content has-text-centered has-text-white">
             <p>
-                Styling based on <strong>Bulma</strong> with the <a href="https://www.color-hex.com/color-palette/74819"> Carnival Hangover Color Pallette</a>
+                Opinions and content posted here are my own, and not representative of any current, past, and future employers
             </p>
             <p>
-                Back-end done using <strong>Crystal</strong> and <strong>Kemal</strong>
+                I generated the top background using <a href="SVGBackgrounds.com" class="has-text-primary">SVGBackgrounds.com</a>! 
             </p>
             <p>
-                Hosted on DigitalOcean
+                Back-end done using <b>Crystal</b> and <b>Kemal</b>
             </p>
             <p>
-                Questions or Comments? Message me on <a href="https://Linkedin.com/in/talha-ahsan">LinkedIn!</a>
+                Questions or Comments? Message me on <a href="https://Linkedin.com/in/talha-ahsan" class="has-text-primary">LinkedIn!</a> 
             </p>
         </div>
     </footer>
 </body>
-<style>
-    html {background-color: #551956;}
-
-</style>
